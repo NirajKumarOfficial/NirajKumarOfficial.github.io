@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('https://images.unsplash.com/photo-1514041781665-32116cb47730');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #ff6b6b;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+button {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+#yesBtn {
+    background-color: #28a745;
+}
+
+#yesBtn:hover {
+    background-color: #218838;
+}
+
+#noBtn {
+    background-color: #dc3545;
+    position: relative;
+}
+
+#noBtn:hover {
+    background-color: #c82333;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: #343a40;
+}
+
+.popup h2 {
+    font-size: 2em;
+    color: #ff6b6b;
+}
+
+.popup p {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+.popup button {
+    font-size: 1em;
+    padding: 8px 20px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.popup button:hover {
+    background-color: #0056b3;
+}
